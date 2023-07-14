@@ -4,6 +4,7 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RiContactsBookLine } from "react-icons/ri";
 import letraeme from "../assets/letraeme.png";
+import NavMenu from "../Menú";
 
 const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +20,11 @@ const DropdownMenu = () => {
 
       <div className={isOpen ? "dropdown-extend" : "dropdown"}>
         <div className="dropdown-content">
-          <a href="#">Opción 1</a>
+            
           <a href="#">Opción 2</a>
           <a href="#">Opción 3</a>
+          <a href="#">Opción 4</a>
+          
         </div>
       </div>
     </>
@@ -42,7 +45,9 @@ export const Header = () => {
         <div style={{position:"fixed"}}>
           <DropdownMenu />
         </div>
-        
+        <div>
+          <NavMenu/>
+        </div>
         
         <div className="rvrigth-sticky">
           <div className="sticky-content">
