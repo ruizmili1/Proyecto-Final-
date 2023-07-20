@@ -1,235 +1,267 @@
+/* elementos dentro del nav con sus estilos*/
 .header {
-    background-color: #f8e0f1;
-    height: 150px;
-    background-image: url(../assets/fondo-electronico1.jpg);
-    background-repeat: repeat;
-    background-size: contain;
-  }
-  
-  .letra {
-    height: 90px;
-    margin-left: 625px;
-    margin-top: -18px;
-  }
-  
-  .nombre {
-    color: hsl(122, 52%, 59%);
-    display: flex;
-    justify-content: center;
-    font-family: fantasy;
-  }
-  
-  
-  .rvrigth-sticky {
-    right: 0;
-    position: fixed;
-    top: 0;
-    white-space: nowrap;
-    width: auto;
-    z-index: 1000;
-    margin: auto;
-    bottom: 0;
-    max-height: 200px;
-  }
-  
-  .sticky-content {
-    position: relative;
-    min-width: 40px;
-    width: auto;
-  }
-  .sticky-inner {
-    position: absolute;
-  }
-  
-  .venta-sticky {
-    background-color: #ffffff;
-    box-shadow: 0 0 15px 2px rgb(156 192 233);
-    padding: 0 10px;
-    height: 28px;
-    text-transform: uppercase;
-    border-radius: 15px 0 0 15px;
-    display: block;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    margin: 10px 0;
-    overflow: hidden;
-  }
-  
-  .nosotros-sticky {
-    background-color: #ffffff;
-    box-shadow: 0 0 15px 2px rgb(156 192 233);
-    padding: 0 10px;
-    height: 28px;
-    text-transform: uppercase;
-    border-radius: 15px 0 0 15px;
-    display: block;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    margin: 10px 0;
-    overflow: hidden;
-  }
-  .contacto-sticky {
-    background-color: #ffffff;
-    box-shadow: 0 0 15px 2px rgb(156 192 233);
-    padding: 0 10px;
-    height: 28px;
-    text-transform: uppercase;
-    border-radius: 15px 0 0 15px;
-    display: block;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    margin: 10px 0;
-    overflow: hidden;
-  }
-  .ventas {
-    color: darkslateblue;
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  .ventas a:hover {
-    height: 28px;
-    left: 0px;
-    position: absolute;
-    top: 0;
-    width: 28px;
-  }
-  
-  .nosotros {
-    color: darkslateblue;
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  .nosotros a:hover {
-    height: 28px;
-    left: 0px;
-    position: absolute;
-    top: 0;
-    width: 28px;
-  }
-  .contacto {
-    color: darkslateblue;
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  .contacto a:hover {
-    height: 28px;
-    left: 0px;
-    position: absolute;
-    top: 0;
-    width: 28px;
-  }
-  
-  .venta-sticky:hover {
-    margin-left: calc(-60% + 30px);
-    background-color: #9cc0e9;;
-  }
-  
-  .venta-stycky.hover a span {
-    opacity: 1;
-  }
-  
-  .contacto-sticky:hover {
-    margin-left: calc(-70% + 30px);
-    background: #9cc0e9;;
-  }
-  
-  .nosotros-sticky:hover {
-    margin-left: calc(-85% + 30px);
-    background-color: #9cc0e9;;
-  }
-  
-  .material-icons {
-    vertical-align: middle;
-    width: 1em;
-    height: 1em;
-    word-wrap: normal;
-    white-space: nowrap;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .menú {
-    margin-top: 140px;
-    position: fixed;
-  }
-  
-  input[type="text"] {
-    flex-grow: 1;
-    padding: 5px;
-  }
-  
-  button {
-    margin-left: 5px;
-    margin-top: 20px
-  }
-  
-  .dropdown {
-    position: relative;
-    margin-left: -175px;
-    transition: 1s;
-    justify-self: start;
-  }
-  
-  .dropdown-content {
-    margin-top: 5px;
-    margin-left: 5px;
-    display: inline-block;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    
-  }
-  
-  .dropdown-extend {
-    transition: 1s;
-    position: relative;
-    margin-left: 0px;
-  }
-  
-  .dropdown-content a {
-    color: rgb(0, 0, 0);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .mi-carrito {
-    color: #f1f1f1;
-    text-decoration: none;
-    font-size: 15px;
-    margin-right: 15px;
-  }
-  
-  .sobre-nosotros {
-    color: darkslateblue;
-    display: inline-block;
-    margin-right: 10px;
-    color: #f1f1f1;
-    text-decoration: none;
-    font-size: 15px;
-  }
-  
+  background-color: #f8e0f1;
+  height: 170px;
+  background-image: url(../assets/empresa.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  padding: 1px;
+}
+
+.letra {
+  height: 90px;
+  margin-top: -18px;
+}
+
+h1 {
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-decoration: uppercase;
+  text-decoration: none;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-align: center;
+  position: relative;
+}
+
+h1::before h1::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-out;
+}
+
+h1:hover::before {
+  color: #bb0000;
+  transform: translate(12px, -12px);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h1:hover::after {
+  color: #77efff;
+  transform: translate(24px, -24px);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: bla;
+}
+.nombre {
+  color: hsl(122, 52%, 59%);
+  display: flex;
+  justify-content: center;
+  font-family: fantasy;
+}
+
+/*menú lateral*/
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.hamburguesa {
+  color: red;
+  font-size: 25px;
+  margin: 3px;
+  margin-top: 0px;
+}
+
+.dropdown {
+  position: relative;
+  margin-left: -175px;
+  transition: 1s;
+  justify-self: start;
+}
+
+.dropdown-content {
+  margin-top: -7px;
+  margin-left: 3px;
+  display: inline-block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-extend {
+  transition: 1s;
+  position: relative;
+  margin-left: 0px;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/*seccion con ventas, nosotros y contactos*/
+.rvrigth-sticky {
+  right: 0;
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
+  width: auto;
+  z-index: 1000;
+  margin: auto;
+  bottom: 0;
+  max-height: 200px;
+}
+
+.sticky-content {
+  position: relative;
+  min-width: 40px;
+  width: auto;
+}
+.sticky-inner {
+  position: absolute;
+}
+
+.venta-sticky {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 2px rgb(156 192 233);
+  padding: 0 10px;
+  height: 28px;
+  text-transform: uppercase;
+  border-radius: 15px 0 0 15px;
+  display: block;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.nosotros-sticky {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 2px rgb(156 192 233);
+  padding: 0 10px;
+  height: 28px;
+  text-transform: uppercase;
+  border-radius: 15px 0 0 15px;
+  display: block;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.contacto-sticky {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 2px rgb(156 192 233);
+  padding: 0 10px;
+  height: 28px;
+  text-transform: uppercase;
+  border-radius: 15px 0 0 15px;
+  display: block;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.ventas {
+  color: darkslateblue;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.ventas a:hover {
+  height: 28px;
+  left: 0px;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.nosotros {
+  color: darkslateblue;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nosotros a:hover {
+  height: 28px;
+  left: 0px;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+.contacto {
+  color: darkslateblue;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.contacto a:hover {
+  height: 28px;
+  left: 0px;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.venta-sticky:hover {
+  margin-left: calc(-60% + 30px);
+  background-color: #9cc0e9;
+}
+
+.venta-stycky.hover a span {
+  opacity: 1;
+}
+
+.contacto-sticky:hover {
+  margin-left: calc(-70% + 30px);
+  background: #9cc0e9;
+}
+
+.nosotros-sticky:hover {
+  margin-left: calc(-85% + 30px);
+  background-color: #9cc0e9;
+}
+
+.material-icons {
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  word-wrap: normal;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mi-carrito {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+.sobre-nosotros {
+  color: darkslateblue;
+  display: inline-block;
+  margin-right: 10px;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 15px;
+}

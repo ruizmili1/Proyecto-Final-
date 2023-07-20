@@ -4,30 +4,42 @@ import { Header } from "./componentes/Header/Header";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  BrowserRouter,
-  Link
+  Route
 } from "react-router-dom";
 import Home from "./componentes/Home/Home";
-import Leyaut from "./componentes/pages/Layaut";
+
 import Luces from "./componentes/pages/articles/Luces";
 import Cables from "./componentes/pages/articles/Cables";
 import Baterías from "./componentes/pages/articles/Baterías";
 import Placas from "./componentes/pages/articles/Placas";
-import Card from "./componentes/ui/Card";
+import Ventas from "./componentes/pages/Ventas";
+import SobreNosotros from "./componentes/pages/SobreNosotros";
+import Contactos from "./componentes/pages/Contactos";
+import Resistencias from "./componentes/pages/articles/Resistencias";
+import Fusibles from "./componentes/pages/articles/Fusibles";
+import Bobinas from "./componentes/pages/articles/Bobinas";
+import Capacitores from "./componentes/pages/articles/Capacitores";
+
 
 function App() {
   return (
     <>
       <Header />
       <div>
-        <h1> Routes </h1>
+       
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Luces" element={<Luces />} />
           <Route path="Cables" element={<Cables />} />
           <Route path="Baterías" element={<Baterías />} />
           <Route path="Placas" element={<Placas />} />
+          <Route path="Resistencias" element={<Resistencias/>} />
+          <Route path="Fusibles" element={<Fusibles />} />
+          <Route path="Bobinas" element={<Bobinas/>} />
+          <Route path="Capacitores" element={<Capacitores/>} />
+          <Route path="Contactos" element={<Contactos/>} />
+          <Route path="Ventas" element={<Ventas />} /> 
+          <Route path="SobreNosotros" element={<SobreNosotros/>} />
         </Routes>
       </div>
     </>
