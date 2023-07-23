@@ -7,7 +7,7 @@ const Bobinas = () => {
         id: 1,
         titulo: " Bobina",
         descripcion: "blindada ",
-        precio: "precio",
+        precio: "",
         imagen: "../../assets/Bobinas/bobina-blindada.jpg",
       },
       {
@@ -22,7 +22,7 @@ const Bobinas = () => {
         titulo: " Bobina",
         descripcion: "de aire",
         precio: "precio",
-        imagen: "../../assets/Bobinas/bobina-de-aire.jpg",
+        imagen: "../../assets/Bobinas/bobina-nucleo-de-aire.jpg",
       },
       {
         id: 4,

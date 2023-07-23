@@ -27,7 +27,7 @@ const ImagenesLuces = (props)=>{
          break;
          case '../../assets/DiodosLed/diodosemisoresled.jpg':
             return (
-             <img className="led-rosa" src={require("../../assets/DiodosLed/diodosemisoresled.jpg")} alt="Descripción de la imagen" />
+             <img className="led-emisores" src={require("../../assets/DiodosLed/diodosemisoresled.jpg")} alt="Descripción de la imagen" />
             ) 
          break;
          case '../../assets/DiodosLed/ledverde.png':

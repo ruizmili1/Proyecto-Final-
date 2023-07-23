@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "../../ui/Card";
 import { Header } from "../../Header/Header";
-import letraeme from "../../assets/letraeme.png";
+
 
 const Cables = () => {
   const [data, setData] = useState([

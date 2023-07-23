@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "../../ui/Card";
 import { Header } from "../../Header/Header";
-import letraeme from "../../assets/letraeme.png";
+
 
 const Luces = () => {
 
@@ -10,7 +10,7 @@ const Luces = () => {
             id:1,
             titulo: " Luces ",
             descripcion: " Diodo luces led, color amarillo. ",
-            precio: "precio",
+            precio: "2.100,00 ARS",
             imagen: "../../assets/DiodosLed/led amarillo.jpg"
         },
         {

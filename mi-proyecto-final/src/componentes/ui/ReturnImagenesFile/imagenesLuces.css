@@ -2,31 +2,51 @@
     height: 180px;
     width: 195px;
 }
+.led-amarillo:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
 .led-blanco{
     height: 180px;
     width: 195px;
 }
+.led-blanco:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
 .led-naranja{
     height: 180px;
     width: 195px;
+}
+.led-naranja:hover{
+    box-shadow: 0 2px 5px #4169E1;
 }
 
 .led-azul{
     height: 180px;
     width: 195px;
 }
-
-.led-rosa{
+.led-azul:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+.led-emisores{
     height: 180px;
     width: 195px;
+}
+.led-emisores:hover{
+    box-shadow: 0 2px 5px #4169E1;
 }
 
 .led-verde{
     height: 180px;
     width: 195px;
 }
+.led-verde:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
 
 .led-rojo{
     height: 180px;
     width: 195px;
+}
+.led-rojo:hover{
+    box-shadow: 0 2px 5px #4169E1;
 }

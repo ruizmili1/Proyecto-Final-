@@ -19,11 +19,11 @@ const ImagenesBobinas = (props) => {
             alt="Descripción de la imagen"
           />
         );
-      case "../../assets/Bobinas/bobina-de-aire.jpg":
+      case "../../assets/Bobinas//bobina-nucleo-de-aire.jpg":
         return (
           <img
             className="bobina-3"
-            src={require("../../assets/Bobinas/bobina-de-aire.jpg")}
+            src={require("../../assets/Bobinas//bobina-nucleo-de-aire.jpg")}
             alt="Descripción de la imagen"
           />
         );

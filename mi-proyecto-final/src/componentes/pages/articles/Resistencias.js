@@ -14,7 +14,7 @@ const Resistencias = () => {
         id: 2,
         titulo: " Resistencias",
         descripcion: "Termistore especiales NTC 10D-9",
-        precio: "$850",
+        precio: "$1.000,00 ARS",
         imagen: "../../assets/Resistencias/especiales/termistore/ntc-10D-9.jpg",
       },
       {
@@ -35,14 +35,14 @@ const Resistencias = () => {
         id: 5,
         titulo: " Resistencias",
         descripcion: "Termistore especiales NTC 5D-15",
-        precio: "$1.856",
+        precio: "$986,70 ARS ",
         imagen: "../../assets/Resistencias/especiales/termistore/ntc-5D-15.jpg",
       },
       {
         id: 6,
         titulo: " Resistencias",
         descripcion: "Termistore especiales NTC 8D-20",
-        precio: "$946",
+        precio: "$946,63 ARS",
         imagen: "../../assets/Resistencias/especiales/termistore/ntc-8D-20.jpg",
       },
       {

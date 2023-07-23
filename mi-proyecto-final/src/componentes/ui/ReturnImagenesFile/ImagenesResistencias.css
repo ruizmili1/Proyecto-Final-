@@ -1,54 +1,91 @@
-.magnetoresistor-1{
-    height: 180px;
-    width: 195px;
+.magnetoresistor-1 {
+  height: 180px;
+  width: 195px;
 }
-.magnetoresistor-2{
-    height: 180px;
-    width: 195px;
+.magnetoresistor-1:hover {
+  box-shadow: 0 2px 5px #4169e1;
 }
-.magnetoresistor-3{
-    height: 180px;
-    width: 195px;
+.magnetoresistor-2 {
+  height: 180px;
+  width: 195px;
 }
-
-.termistore-1{
-    height: 180px;
-    width: 195px;
+.magnetoresistor-2:hover {
+  box-shadow: 0 2px 5px #4169e1;
 }
-.termistore-2{
-    height: 180px;
-    width: 195px;
+.magnetoresistor-3 {
+  height: 180px;
+  width: 195px;
 }
-.termistore-3{
-    height: 180px;
-    width: 195px;
+.magnetoresistor-3:hover {
+  box-shadow: 0 2px 5px #4169e1;
 }
-.termistore-4{
-    height: 180px;
-    width: 195px;
+.termistore-1 {
+  height: 180px;
+  width: 195px;
 }
-.termistore-5{
-    height: 180px;
-    width: 195px;
+.termistore-1:hover {
+  box-shadow: 0 2px 5px #4169e1;
 }
-.termistore-6{
-    height: 180px;
-    width: 195px;
+.termistore-2 {
+  height: 180px;
+  width: 195px;
 }
-
-.termistore-7{
-    height: 180px;
-    width: 195px;
+.termistore-2:hover {
+  box-shadow: 0 2px 5px #4169e1;
 }
-.termistore-8{
-    height: 180px;
-    width: 195px;
+.termistore-3 {
+  height: 180px;
+  width: 195px;
 }
-.termistore-9{
-    height: 180px;
-    width: 195px;
+.termistore-3:hover {
+  box-shadow: 0 2px 5px #4169e1;
 }
-.fotoresistor-10{
-    height: 180px;
-    width: 195px;
+.termistore-4 {
+  height: 180px;
+  width: 195px;
+}
+.termistore-4:hover {
+  box-shadow: 0 2px 5px #4169e1;
+}
+.termistore-5 {
+  height: 180px;
+  width: 195px;
+}
+.termistore-5:hover {
+  box-shadow: 0 2px 5px #4169e1;
+}
+.termistore-6 {
+  height: 180px;
+  width: 195px;
+}
+.termistore-6:hover {
+  box-shadow: 0 2px 5px #4169e1;
+}
+.termistore-7 {
+  height: 180px;
+  width: 195px;
+}
+.termistore-7:hover {
+  box-shadow: 0 2px 5px #4169e1;
+}
+.termistore-8 {
+  height: 180px;
+  width: 195px;
+}
+.termistore-8:hover {
+  box-shadow: 0 2px 5px #4169e1;
+}
+.termistore-9 {
+  height: 180px;
+  width: 195px;
+}
+.termistore-9:hover {
+  box-shadow: 0 2px 5px #4169e1;
+}
+.fotoresistor-10 {
+  height: 180px;
+  width: 195px;
+}
+.fotoresistor-10:hover {
+  box-shadow: 0 2px 5px #4169e1;
 }

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Card.css";
 import ImagenesLuces from "./ReturnImagenesFile/ImagenesLuces";
-import ImagenesHome from "./ReturnImagenesFile/ImagenHome";
 import ImagenesCables from "./ReturnImagenesFile/ImagenesCables";
 import ImagenesBaterías from "./ReturnImagenesFile/ImagenesBaterías";
 import ImagenesResistencias from "./ReturnImagenesFile/ImagenesResistencias";
@@ -16,9 +15,6 @@ const Card = (props) => {
     switch (rute) {
       case "Luces":
         return <ImagenesLuces imagen={props.imagen} />;
-        break;
-      case "Home":
-        return <ImagenesHome imagen={props.imagen} />;
         break;
       case "Cables":
         return <ImagenesCables imagen={props.imagen} />;

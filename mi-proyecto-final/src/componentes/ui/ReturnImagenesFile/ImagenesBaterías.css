@@ -2,52 +2,95 @@
     height: 180px;
     width: 195px;
 }
+.duracell-2a:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
 .duracell-3a{
     height: 180px;
     width: 195px;
+}
+.duracell-3a:hover{
+    box-shadow: 0 2px 5px #4169E1;
 }
 
 .duracell-recargable-2a{
     height: 180px;
     width: 195px;
 }
+.duracell-recargable-2a:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
 
 .duracell-ultra{
     height: 180px;
     width: 195px;
+}
+.duracell-ultra:hover{
+    box-shadow: 0 2px 5px #4169E1;
 }
 
 .energizer-2a{ 
     height: 180px;
     width: 195px;
 }
+.energizer-2a:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+
 .energizer-3a{
     height: 180px;
     width: 195px;
 }
+.energizer-3a:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+
 .energizer-recargable-2a{
     height: 180px;
     width: 195px;
 }
+.energizer-recargable-2a:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+
 .energizer-recargable-3a{
     height: 180px;
     width: 195px;
+}
+.energizer-recargable-3a:hover{
+    box-shadow: 0 2px 5px #4169E1;
 }
 
 .maxell-2a{
     height: 180px;
     width: 195px;
 }
+.maxell-2a:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+
+
 .maxell-3a{
     height: 180px;
     width: 195px;
 }
+.maxell-3a:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+
 
 .panasonic-evolta-2a{
     height: 180px;
     width: 195px;
 }
+.panasonic-evolta-2a:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+
 .panasonic-evolta-3a{
     height: 180px;
     width: 195px;
+}
+.panasonic-evolta-3a:hover{
+    box-shadow: 0 2px 5px #4169E1;
 }

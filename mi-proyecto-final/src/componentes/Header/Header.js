@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import "./Header.css";
-import { AiOutlineInfoCircle } from "react-icons/ai";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import { RiContactsBookLine } from "react-icons/ri";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Switch,
+  Link,
+} from "react-router-dom";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
-
-function MyComponent() {
-  return (
-    <div>
-      <h1 className="title">Título de mi página</h1>
-    </div>
-  );
-}
+import NavBar from "../Navegador/Navbar";
 
 const App = () => {
   const handleSearch = (searchTerm) => {
@@ -49,7 +47,9 @@ const SearchBar = ({ onSearch }) => {
         onChange={handleInputChange}
         placeholder="Buscar..."
       />
-      <button type="submit">Buscar</button>
+      <button type="submit" style={{ fontSize: "15px", marginLeft: "4px" }}>
+        Buscar
+      </button>
     </form>
   );
 };
@@ -69,7 +69,10 @@ const DropdownMenu = () => {
   return (
     <>
       <div className="boton" onClick={toggleMenu}>
-        
+        <span style={{ fontSize: "30px" }}>
+          {" "}
+          <GiHamburgerMenu />{" "}
+        </span>
       </div>
 
       <div className={isOpen ? "dropdown-extend" : "dropdown"}>
@@ -151,53 +154,14 @@ export const Header = () => {
           <h1> MISIOTRÓNICA </h1>
         </div>
 
-        <div  className="hamburguesa" style={{ position: "fixed" }}>
-        <GiHamburgerMenu style={{fontSize: "23px", margin: "3px", color: "red"}} />
+        <div style={{ position: "fixed" }}>
+          <DropdownMenu />
         </div>
-        <nav>
+        <nav className="buscador">
           <SearchBar />
         </nav>
-        <div className="rvrigth-sticky">
-          <div className="sticky-content">
-            <div className="sticky-inner">
-              <div className="venta-sticky">
-                <a className="ventas" href="">
-                  <i className="material-icons">
-                    {" "}
-                    <AiOutlineShoppingCart
-                      className="hover"
-                      style={{ fontSize: "23px", margin: "3px" }}
-                    />{" "}
-                  </i>
-                  <span> Ventas </span>
-                </a>
-              </div>
-
-              <div className="nosotros-sticky">
-                <a className="nosotros" href="">
-                  <i className="material-icons">
-                    {" "}
-                    <AiOutlineInfoCircle
-                      style={{ fontSize: "23px", margin: "3px" }}
-                    />{" "}
-                    <span> Sobre nosotros</span>
-                  </i>
-                </a>
-              </div>
-
-              <div className="contacto-sticky">
-                <a className="contacto" href="">
-                  <i className="material-icons">
-                    {" "}
-                    <RiContactsBookLine
-                      style={{ fontSize: "20px", margin: "3px" }}
-                    />{" "}
-                  </i>
-                  <span> Contactos </span>
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="Navegador">
+          <NavBar />
         </div>
       </header>
     </>

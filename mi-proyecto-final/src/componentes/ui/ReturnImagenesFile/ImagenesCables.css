@@ -1,31 +1,53 @@
-.cable-marron{
-    height: 200px;
-    width: 200px;
-    margin-top: 5px;
+.cable-marron {
+  height: 200px;
+  width: 200px;
+  margin-top: 5px;
 }
-.cable-celeste{
-    height: 200px;
-    width: 200px;
-    margin-top: 5px;
-}
-.cable-rojo{
-    height: 200px;
-    width: 200px;
-    margin-top: 5px;
-}
-.cable-negro{
-    height: 180px;
-    width: 195px;
-    margin-top: 5px;
+.cable-marron:hover {
+  box-shadow: 0 2px 5px #4169E1;
 }
 
-.cable-tierra{
-    height: 180px;
-    width: 195px;
-    margin-top: 5px;
+.cable-celeste {
+  height: 200px;
+  width: 200px;
+  margin-top: 5px;
 }
-.cable-utp{
-    height: 180px;
-    width: 195px;
-    margin-top: 5px;
+.cable-celeste:hover {
+  box-shadow: 0 2px 5px #4169E1;
+}
+
+.cable-rojo {
+  height: 200px;
+  width: 200px;
+  margin-top: 5px;
+}
+.cable-rojo:hover {
+  box-shadow: 0 2px 5px #4169E1;
+}
+
+.cable-negro {
+  height: 180px;
+  width: 195px;
+  margin-top: 5px;
+}
+.cable-negro:hover {
+  box-shadow: 0 2px 5px #4169E1;
+}
+
+.cable-tierra {
+  height: 180px;
+  width: 195px;
+  margin-top: 5px;
+}
+.cable-tierra:hover {
+  box-shadow: 0 2px 5px #4169E1;
+}
+
+.cable-utp {
+  height: 180px;
+  width: 195px;
+  margin-top: 5px;
+}
+.cable-utp:hover {
+  box-shadow: 0 2px 5px #4169E1;
 }
