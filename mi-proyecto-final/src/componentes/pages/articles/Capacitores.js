@@ -6,7 +6,7 @@ const Capacitores = () => {
     {
       id: 1,
       titulo: " Capacitor",
-      descripcion: "",
+      descripcion: "capacitor electrolítico de 1000uf",
       precio: "precio",
       imagen: "../../assets/Capacitores/500_500-1000x35.jpg",
     },

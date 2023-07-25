@@ -57,6 +57,24 @@ const ImagenesCables = (props) => {
           />
         );
         break;
+        case "../../assets/Cables/cable-alambre-soldar-8c.jpg":
+        return (
+          <img
+            className="cable-alambre"
+            src={require("../../assets/Cables/cable-alambre-soldar-8c.jpg")}
+            alt="Descripción de la imagen"
+          />
+        );
+        break;
+        case "../../assets/Cables/cable-macho7hembra.jpg":
+        return (
+          <img
+            className="cable-machohembra"
+            src={require("../../assets/Cables/cable-macho7hembra.jpg")}
+            alt="Descripción de la imagen"
+          />
+        );
+        break;
     }
   };
 

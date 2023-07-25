@@ -48,3 +48,28 @@
     text-decoration: none;
     margin-right: 10px;
 }
+
+.icon1{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.icon2{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.icon3{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.link-1:hover{
+    color: #142448;
+}
+.link-2:hover{
+    color: #142448;
+}
+.link-3:hover{
+    color: #142448;;
+}

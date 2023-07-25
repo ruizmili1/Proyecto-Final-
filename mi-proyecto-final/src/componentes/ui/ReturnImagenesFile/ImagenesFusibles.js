@@ -51,22 +51,6 @@ const ImagenesFusibles = (props) => {
             alt="Descripción de la imagen"
           />
         );
-      case "../../assets/Fusibles/fusiblenh-t0.80a.jpg":
-        return (
-          <img
-            className="fusible-7"
-            src={require("../../assets/Fusibles/fusiblenh-t0.80a.jpg")}
-            alt="Descripción de la imagen"
-          />
-        );
-      case "../../assets/Fusibles/fusiblenh-t1.200a.jpg":
-        return (
-          <img
-            className="fusible-8"
-            src={require("../../assets/Fusibles/fusiblenh-t1.200a.jpg")}
-            alt="Descripción de la imagen"
-          />
-        );
     }
   };
 

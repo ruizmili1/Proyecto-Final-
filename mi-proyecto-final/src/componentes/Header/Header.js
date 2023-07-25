@@ -13,44 +13,68 @@ import { useNavigate } from "react-router-dom";
 import NavBar from "../Navegador/Navbar";
 
 const App = () => {
-  const handleSearch = (searchTerm) => {
-    // Aquí puedes implementar la lógica de búsqueda, como llamar a una API o filtrar datos
-    console.log("Buscar:", searchTerm);
-  };
-
+  
   return (
     <div>
       <h1>Aplicación de Búsqueda</h1>
-      <SearchBar onSearch={handleSearch} />
+      <SearchBar />
       {/* Otros componentes y funcionalidades */}
     </div>
   );
 };
 
-const SearchBar = ({ onSearch }) => {
+const SearchBar = () => {
+  const navigation = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
+  const Redireccionador =(value) =>{
+    const luces = ['luce','led','luz','foco','lampara','cinta']
+    const cables = ['cable','corriente','conductor']
+    let searchValue = value.toLowerCase()
+    let hasSValue = searchValue.slice((searchValue.length-1),(searchValue.length+1))
+    if(hasSValue == 's'){
+      console.log('hh')
+      searchValue = searchValue.slice(0,searchValue.length-1)
+    }
+    searchValue = luces.includes(searchValue)? 'isLuces' : searchValue;
+    searchValue = cables.includes(searchValue)? 'isCables' : searchValue
+
+    
+    console.log(searchValue,cables.includes(searchValue))
+    switch (searchValue){
+      case 'isLuces':
+        navigation("/Luces");
+        break;
+      case 'isCables':
+        navigation("/Cables");
+        break;
+      default:
+        navigation("/Error");
+        break;
+    }
+  }
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
+
   const handleFormSubmit = (event) => {
-    event.preventDefault();
-    onSearch(searchTerm);
+    Redireccionador(searchTerm)
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
-      <input
+    <>
+    <input
         type="text"
         value={searchTerm}
         onChange={handleInputChange}
         placeholder="Buscar..."
       />
-      <button type="submit" style={{ fontSize: "15px", marginLeft: "4px" }}>
+      <button onClick={handleFormSubmit}type="submit" style={{ fontSize: "15px", marginLeft: "4px" }}>
         Buscar
       </button>
-    </form>
+    </>
+      
   );
 };
 
@@ -66,6 +90,9 @@ const DropdownMenu = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const closedMenu = () =>{
+    setIsOpen(false);
+  }
   return (
     <>
       <div className="boton" onClick={toggleMenu}>
@@ -80,6 +107,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/#");
+              closedMenu()
             }}
           >
             Inicio
@@ -87,6 +115,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/Luces");
+              closedMenu()
             }}
           >
             Luces

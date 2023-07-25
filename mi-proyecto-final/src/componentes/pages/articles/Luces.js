@@ -10,14 +10,14 @@ const Luces = () => {
             id:1,
             titulo: " Luces ",
             descripcion: " Diodo luces led, color amarillo. ",
-            precio: "2.100,00 ARS",
+            precio: "$600 ARS x10U",
             imagen: "../../assets/DiodosLed/led amarillo.jpg"
         },
         {
             id:2,
             titulo: "Luces",
             descripcion: "Diodo luces led, color azúl.  ",
-            precio: "precio",
+            precio: "$899 ARS x10U",
             imagen: "../../assets/DiodosLed/led azul.jpg"
 
         },
@@ -25,7 +25,7 @@ const Luces = () => {
             id:3,
             titulo: "Luces",
             descripcion: "Diodo luces led, color blanco.  ",
-            precio: "precio",
+            precio: "$899 ARS x10U",
             imagen: "../../assets/DiodosLed/led blanco.jpg"
 
         },
@@ -33,7 +33,7 @@ const Luces = () => {
             id:4,
             titulo: "Luces",
             descripcion: "Diodo luces led, color naranja.  ",
-            precio: "precio",
+            precio: "$948 ARS x10U",
             imagen: "../../assets/DiodosLed/led naranja.jpg"
 
         },
@@ -41,7 +41,7 @@ const Luces = () => {
             id:5,
             titulo: "Luces",
             descripcion: "Diodo luces led emisores.  ",
-            precio: "precio",
+            precio: "$2.000,00  ARS x10U",
             imagen: "../../assets/DiodosLed/diodosemisoresled.jpg"
 
         },
@@ -49,7 +49,7 @@ const Luces = () => {
             id:6,
             titulo: "Luces",
             descripcion: "Diodo luces led, color verde.  ",
-            precio: "precio",
+            precio: "$748 ARS x10U",
             imagen: "../../assets/DiodosLed/ledverde.png"
 
         },
@@ -57,8 +57,24 @@ const Luces = () => {
             id:7,
             titulo: "Luces",
             descripcion: "Diodo luces led, color rojo.  ",
-            precio: "precio",
+            precio: "$860 ARS x10U",
             imagen: "../../assets/DiodosLed/LED-rojo-3.jpg"
+
+        },
+        {
+            id:8,
+            titulo: "Luces",
+            descripcion: "tira luz led, Rgb de 5mts",
+            precio: "$2.560,00 ARS",
+            imagen: "../../assets/DiodosLed/tira-luz-led5mts.jpg"
+
+        },
+        {
+            id:9,
+            titulo: "Luces",
+            descripcion: "tira luz led, blanco frío común de 5mts",
+            precio: "$8.622,40 ARS",
+            imagen: "../../assets/DiodosLed/led-blanco-exterior.jpeg"
 
         },
     ])

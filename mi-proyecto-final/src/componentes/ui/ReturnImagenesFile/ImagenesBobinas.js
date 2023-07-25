@@ -27,19 +27,19 @@ const ImagenesBobinas = (props) => {
             alt="Descripción de la imagen"
           />
         );
-      case "../../assets/Bobinas/bobina-ferromagnetica.jpg":
+      case "../../assets/Bobinas/bobina-ferromagnetico.jpg":
         return (
           <img
             className="bobina-4"
-            src={require("../../assets/Bobinas/bobina-ferromagnetica.jpg")}
+            src={require("../../assets/Bobinas/bobina-ferromagnetico.jpg")}
             alt="Descripción de la imagen"
           />
         );
-      case "../../assets/Bobinas/bobina-material-ferroso.png":
+      case "../../assets/Bobinas/bobina-materialferroso.jpg":
         return (
           <img
             className="bobina-5"
-            src={require("../../assets/Bobinas/bobina-material-ferroso.png")}
+            src={require("../../assets/Bobinas/bobina-materialferroso.jpg")}
             alt="Descripción de la imagen"
           />
         );

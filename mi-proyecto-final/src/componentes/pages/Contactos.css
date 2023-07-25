@@ -1,4 +1,59 @@
-.container-1{
-    padding: 10px;
-    margin: 10px;
+.container-1 {
+  padding: 10px;
+  margin: 10px;
+}
+.contenedor-padre1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.gmail {
+  margin-right: 5px;
+  margin-top: 7px;
+}
+
+.contenedor-padre2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone {
+  margin-right: 5px;
+  margin-top: 7px;
+}
+.contenedor-padre3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.instagram {
+  margin-right: 5px;
+  margin-top: 7px;
+}
+
+.contenedor-padre4 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.facebook {
+  margin-right: 5px;
+  margin-top: 7px;
+}
+
+.contenedor-padre5 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.whatsapp {
+  margin-right: 5px;
+  margin-top: 7px;
 }

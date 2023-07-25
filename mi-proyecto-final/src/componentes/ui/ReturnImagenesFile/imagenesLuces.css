@@ -50,3 +50,17 @@
 .led-rojo:hover{
     box-shadow: 0 2px 5px #4169E1;
 }
+.led-color{
+    height: 180px;
+    width: 195px;   
+}
+.led-color:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+.led-blanco{
+    height: 180px;
+    width: 195px; 
+}
+.led-blanco:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}

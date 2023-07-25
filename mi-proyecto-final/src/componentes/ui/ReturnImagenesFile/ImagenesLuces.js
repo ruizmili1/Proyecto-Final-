@@ -40,6 +40,16 @@ const ImagenesLuces = (props)=>{
              <img className="led-rojo" src={require("../../assets/DiodosLed/LED-rojo-3.jpg")} alt="Descripción de la imagen" />
             ) 
          break;
+         case '../../assets/DiodosLed/tira-luz-led5mts.jpg':
+            return (
+             <img className="led-color" src={require("../../assets/DiodosLed/tira-luz-led5mts.jpg")} alt="Descripción de la imagen" />
+            ) 
+         break;
+         case '../../assets/DiodosLed/led-blanco-exterior.jpeg':
+            return (
+             <img className="led-blanco" src={require("../../assets/DiodosLed/led-blanco-exterior.jpeg")} alt="Descripción de la imagen" />
+            ) 
+         break;
     }
     }
     

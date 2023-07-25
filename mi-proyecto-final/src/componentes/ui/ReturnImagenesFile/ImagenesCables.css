@@ -51,3 +51,23 @@
 .cable-utp:hover {
   box-shadow: 0 2px 5px #4169E1;
 }
+
+.cable-alambre{
+  height: 180px;
+  width: 195px;
+  margin-top: 5px;
+}
+.cable-alambre:hover{
+  box-shadow: 0 2px 5px #4169E1;
+}
+
+.cable-machohembra{
+  height: 180px;
+  width: 195px;
+  margin-top: 5px;
+  margin-left: 5px;
+
+}
+.cable-machohembra:hover{
+  box-shadow: 0 2px 5px #4169E1;
+}

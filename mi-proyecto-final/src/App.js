@@ -15,6 +15,7 @@ import Capacitores from "./componentes/pages/articles/Capacitores"
 import Ventas from "./componentes/pages/Ventas";
 import SobreNosotros from "./componentes/pages/SobreNosotros";
 import Contactos from "./componentes/pages/Contactos";
+import { Error } from "./componentes/PageError/Error";
 
 
 
@@ -36,7 +37,7 @@ function App() {
           <Route path="Ventas" element={<Ventas/>} />
           <Route path="SobreNosotros" element= { <SobreNosotros/>} />
           <Route path="Contactos" element={<Contactos/>} />
-          
+          <Route path="Error" element={<Error/>} />
         </Routes>
       </div>
     </>
