@@ -64,7 +64,7 @@ const Luces = () => {
         {
             id:8,
             titulo: "Luces",
-            descripcion: "tira luz led, Rgb de 5mts",
+            descripcion: "Tira luz led, Rgb de 5mts",
             precio: "$2.560,00 ARS",
             imagen: "../../assets/DiodosLed/tira-luz-led5mts.jpg"
 
@@ -72,7 +72,7 @@ const Luces = () => {
         {
             id:9,
             titulo: "Luces",
-            descripcion: "tira luz led, blanco frío común de 5mts",
+            descripcion: "Tira luz led, blanco frío común de 5mts",
             precio: "$8.622,40 ARS",
             imagen: "../../assets/DiodosLed/led-blanco-exterior.jpeg"
 

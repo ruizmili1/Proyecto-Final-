@@ -50,14 +50,14 @@ const Cables = () => {
     {
       id: 7,
       titulo: " Cables ",
-      descripcion: "cable de alambre de soldar de 8 colores, 250 mts",
+      descripcion: "Cable de alambre de soldar de 8 colores, 250 mts",
       precio: "$6.326,00 ARS",
       imagen: "../../assets/Cables/cable-alambre-soldar-8c.jpg",
     },
     {
       id: 8,
       titulo: " Cables ",
-      descripcion: "pack 40 cables Dupont macho/hembra de 20cm",
+      descripcion: "Pack 40 cables Dupont macho/hembra de 20cm",
       precio: "$1.799,00 ARS",
       imagen: "../../assets/Cables/cable-macho7hembra.jpg",
     },

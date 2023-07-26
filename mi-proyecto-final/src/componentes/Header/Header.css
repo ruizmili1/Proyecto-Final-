@@ -32,7 +32,13 @@ input[type="text"] {
   padding: 5px;
 }
 
-
+.general-menu{
+  position: fixed;
+  padding: 3px 10px;
+  background-color: #c7ccd5;
+  
+  margin-left: 2px;
+}
 .buscador {
   display: flex;
   justify-content: center;
@@ -47,10 +53,40 @@ input[type="text"] {
   margin-top: 40px;
   font-size: 30px;
 }
+.search-button {
+  padding: 6px 10px;
+  background-color: #039bfb;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+@media (max-width: 600px) {
+  .search-input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
 
 .dropdown {
   position: relative;
-  margin-left: -175px;
+  margin-left: -180px;
   transition: 1s;
   justify-self: start;
 }
@@ -69,7 +105,7 @@ input[type="text"] {
 .dropdown-extend {
   transition: 1s;
   position: relative;
-  margin-left: 0px;
+     margin-left: -13px;
 }
 
 .dropdown-content a {

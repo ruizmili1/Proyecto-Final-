@@ -12,69 +12,113 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../Navegador/Navbar";
 
-const App = () => {
-  
-  return (
-    <div>
-      <h1>Aplicación de Búsqueda</h1>
-      <SearchBar />
-      {/* Otros componentes y funcionalidades */}
-    </div>
-  );
-};
-
 const SearchBar = () => {
   const navigation = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
-  const Redireccionador =(value) =>{
-    const luces = ['luce','led','luz','foco','lampara','cinta']
-    const cables = ['cable','corriente','conductor']
-    let searchValue = value.toLowerCase()
-    let hasSValue = searchValue.slice((searchValue.length-1),(searchValue.length+1))
-    if(hasSValue == 's'){
-      console.log('hh')
-      searchValue = searchValue.slice(0,searchValue.length-1)
+  const Redireccionador = (value) => {
+    const luces = ["luce", "led", "luz", "foco", "lampara", "cinta"];
+    const cables = ["cable", "corriente", "conductor"];
+    const baterias = ["pila", "generador", "fuente", "bateria", "bateria","batería"];
+    const placas = ["circuito impreso", "pbc", "placa"];
+    const resistencias = [];
+    const fusibles = [
+      "mecha",
+      "espoleta",
+      "detonador",
+      "gatillo",
+      "interruptor",
+      "disparador",
+      "detonante",
+    ];
+    const bobinas = [
+      "inductor",
+      "inductore",
+      "rollo",
+      "cilindro",
+      "carrete",
+      "bobina de alambre",
+      "bobina ferrica",
+    ];
+    const capacitores = ["condensador"];
+    let searchValue = value.toLowerCase();
+    let hasSValue = searchValue.slice(
+      searchValue.length - 1,
+      searchValue.length + 1
+    );
+    if (hasSValue == "s") {
+      console.log("hh");
+      searchValue = searchValue.slice(0, searchValue.length - 1);
     }
-    searchValue = luces.includes(searchValue)? 'isLuces' : searchValue;
-    searchValue = cables.includes(searchValue)? 'isCables' : searchValue
+    searchValue = luces.includes(searchValue) ? "isLuces" : searchValue;
+    searchValue = cables.includes(searchValue) ? "isCables" : searchValue;
+    searchValue = baterias.includes(searchValue) ? "isBaterías" : searchValue;
+    searchValue = placas.includes(searchValue) ? "isPlacas" : searchValue;
+    searchValue = resistencias.includes(searchValue)
+      ? "isResistencias"
+      : searchValue;
+    searchValue = fusibles.includes(searchValue) ? "isFusibles" : searchValue;
+    searchValue = bobinas.includes(searchValue) ? "isBobinas" : searchValue;
+    searchValue = capacitores.includes(searchValue)
+      ? "isCpapcitores"
+      : searchValue;
 
-    
-    console.log(searchValue,cables.includes(searchValue))
-    switch (searchValue){
-      case 'isLuces':
+    console.log(searchValue, cables.includes(searchValue));
+    switch (searchValue) {
+      case "isLuces":
         navigation("/Luces");
         break;
-      case 'isCables':
+      case "isCables":
         navigation("/Cables");
+        break;
+      case "isBaterías":
+        navigation("/Baterías");
+        break;
+      case "isPlacas":
+        navigation("/Placas");
+        break;
+      case "isResistencias":
+        navigation("/Resistencias");
+        break;
+      case "isFusibles":
+        navigation("/Fusibles");
+        break;
+      case "isBobinas":
+        navigation("7Bobinas");
+        break;
+      case "isCapacitores":
+        navigation("/Capacitores");
         break;
       default:
         navigation("/Error");
         break;
     }
-  }
+  };
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
-
   const handleFormSubmit = (event) => {
-    Redireccionador(searchTerm)
+    Redireccionador(searchTerm);
   };
 
   return (
-    <>
-    <input
+    <div className="search-container">
+      <input
+        className="search-input"
         type="text"
         value={searchTerm}
         onChange={handleInputChange}
         placeholder="Buscar..."
       />
-      <button onClick={handleFormSubmit}type="submit" style={{ fontSize: "15px", marginLeft: "4px" }}>
+      <button
+        className="search-button"
+        onClick={handleFormSubmit}
+        type="submit"
+      >
         Buscar
       </button>
-    </>
-      
+    </div>
   );
 };
 
@@ -90,9 +134,9 @@ const DropdownMenu = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const closedMenu = () =>{
+  const closedMenu = () => {
     setIsOpen(false);
-  }
+  };
   return (
     <>
       <div className="boton" onClick={toggleMenu}>
@@ -107,7 +151,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/#");
-              closedMenu()
+              closedMenu();
             }}
           >
             Inicio
@@ -115,7 +159,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/Luces");
-              closedMenu()
+              closedMenu();
             }}
           >
             Luces
@@ -123,6 +167,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/Cables");
+              closedMenu();
             }}
           >
             Cables
@@ -130,6 +175,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/Baterías");
+              closedMenu();
             }}
           >
             Baterías
@@ -137,6 +183,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/Placas");
+              closedMenu();
             }}
           >
             Placas
@@ -144,6 +191,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/Resistencias");
+              closedMenu();
             }}
           >
             Resistencias
@@ -151,6 +199,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/Fusibles");
+              closedMenu();
             }}
           >
             Fusibles
@@ -158,6 +207,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/Bobinas");
+              closedMenu();
             }}
           >
             Bobinas
@@ -165,6 +215,7 @@ const DropdownMenu = () => {
           <a
             onClick={() => {
               navigation("/Capacitores");
+              closedMenu();
             }}
           >
             Capacitores
@@ -183,7 +234,7 @@ export const Header = () => {
           <h1> MISIOTRÓNICA </h1>
         </div>
 
-        <div style={{ position: "fixed" }}>
+        <div className="general-menu">
           <DropdownMenu />
         </div>
         <nav className="buscador">

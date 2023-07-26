@@ -48,9 +48,9 @@ const Card = (props) => {
           <div>
             <ReturnImagen imagen={item.imagen} />
           </div>
-          <div>{item.titulo}</div>
-          <div>{item.descripcion}</div>
-          <div>{item.precio}</div>
+          <div className="titulo">{item.titulo}</div>
+          <div className="descripcion">{item.descripcion}</div>
+          <div className="precio">{item.precio}</div>
         </div>
       </>
     );
