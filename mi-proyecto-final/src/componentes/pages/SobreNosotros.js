@@ -1,6 +1,6 @@
 import React from "react";
 import "./SobreNosotros.css";
-import misiotronica from "../assets/misiotronica.jpg";
+
 
 
 const SobreNosotros = () => {
@@ -8,7 +8,7 @@ const SobreNosotros = () => {
     <div className="container-2">
       <h3 style={{fontSize:"20px"}}>Misiotrónica</h3>
       <p className="texto">
-        <img className="imagen" src= {misiotronica} alt="Logo"/>
+        
 
         "Somos una empresa pyme especializada en la venta de elementos electrónicos de alta calidad. Desde nuestros inicios en 2022, nos hemos dedicado a proporcionar a nuestros clientes una amplia variedad de productos esenciales para el mundo de la electrónica, incluyendo cables, bobinas, fusibles, placas, baterías, capacitores, resistencias y muchos otros componentes necesarios para proyectos electrónicos y aplicaciones industriales.
 

@@ -16,6 +16,9 @@ import Ventas from "./componentes/pages/Ventas";
 import SobreNosotros from "./componentes/pages/SobreNosotros";
 import Contactos from "./componentes/pages/Contactos";
 import { Error } from "./componentes/PageError/Error";
+import NotFound from "./componentes/NotFound/NotFound";
+import Inicio from "./componentes/ui/ReturnImagenesFile/Inicio";
+
 
 
 
@@ -23,9 +26,10 @@ function App() {
   return (
     <>
       <Header />
+    
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={< Inicio />} />
           <Route path="Luces" element={<Luces />} />
           <Route path="Cables" element={<Cables />} />
           <Route path="Baterías" element={<Baterías />} />
@@ -38,8 +42,11 @@ function App() {
           <Route path="SobreNosotros" element= { <SobreNosotros/>} />
           <Route path="Contactos" element={<Contactos/>} />
           <Route path="Error" element={<Error/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </div>
+      
+      
     </>
 
     // <div className="App">

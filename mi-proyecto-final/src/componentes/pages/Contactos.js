@@ -16,7 +16,7 @@ const Contactos = () => {
               <GrMail />
             </div>
             <div>
-              <p> misiotronicaelectronicos22@gmail.com</p>
+              <p>Correo: misiotronicaelectronicos22@gmail.com</p>
             </div>
           </div>
 

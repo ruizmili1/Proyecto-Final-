@@ -8,6 +8,7 @@ import ImagenesFusibles from "./ReturnImagenesFile/ImagenesFusibles";
 import ImagenesPlacas from "./ReturnImagenesFile/ImagenesPlacas";
 import ImagenesBobinas from "./ReturnImagenesFile/ImagenesBobinas";
 import ImagenesCapacitores from "./ReturnImagenesFile/ImagenesCapacitores";
+import {BsCartPlus} from "react-icons/bs"
 
 const Card = (props) => {
   const { data, rute } = props;
@@ -51,6 +52,9 @@ const Card = (props) => {
           <div className="titulo">{item.titulo}</div>
           <div className="descripcion">{item.descripcion}</div>
           <div className="precio">{item.precio}</div>
+          <div style={{margin: "10px"}}>
+            <BsCartPlus /> <button className="carrito-boton" > Agregar al carrito </button>
+          </div>
         </div>
       </>
     );

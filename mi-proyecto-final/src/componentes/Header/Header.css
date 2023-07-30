@@ -1,57 +1,65 @@
 /* elementos dentro del nav con sus estilos*/
 .header {
-  background-image: url(../assets/fondo-3.jpg);
+  background-color: #08283f;
   background-repeat: repeat;
   background-size: cover;
-  background-position:center ;
+  background-position: center;
   padding: 1px;
-  height: '100vh';
+  height: "100vh";
 }
 
-h1 {
+.h1 {
   font-size: 50px;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 8px;
-  text-decoration: uppercase;
-  text-decoration: none;
-  color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: rgb(0 98 255);
   text-align: center;
   position: relative;
+  text-shadow: 2px 2px 4px rgb(0 98 255), -2px -2px 4px rgba(255, 255, 255, 0.3);
 }
 
-/*menú lateral*/
-
-.menú {
-  margin-top: 140px;
-  position: fixed;
+.fotoportada{
+  height: 140px;
+  background: #08283f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
+
+.logoempresa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 105px;
+  margin-top: -25px;
+}
+
+/* barra de búsqueda  */
+
 input[type="text"] {
   flex-grow: 1;
   padding: 5px;
+  width: 250px;
+  height: 20px;
+  margin-bottom: 5px;
 }
 
-.general-menu{
-  position: fixed;
-  padding: 3px 10px;
-  background-color: #c7ccd5;
-  
-  margin-left: 2px;
-}
 .buscador {
   display: flex;
   justify-content: center;
-  margin-top: 68px;
+  margin-top: 40px;
   height: 40px;
   padding: 0px;
   flex-wrap: wrap;
   align-items: center;
-
 }
 .button {
+  color: white;
+  margin-left: 0px;
   margin-top: 40px;
-  font-size: 30px;
 }
 .search-button {
   padding: 6px 10px;
@@ -60,6 +68,7 @@ input[type="text"] {
   border: none;
   border-radius: 7px;
   cursor: pointer;
+  margin-bottom: 6px;
 }
 .search-input {
   padding: 8px;
@@ -84,19 +93,29 @@ input[type="text"] {
   align-items: center;
 }
 
+/* Menú lateral hamburguesa */
+.general-menu {
+  position: fixed;
+  margin-left: 7px;
+}
+.boton {
+  color: white;
+  margin-left: 0px;
+  margin-top: 40px;
+}
 .dropdown {
   position: relative;
-  margin-left: -180px;
+  margin-left: -185px;
   transition: 1s;
   justify-self: start;
 }
 
 .dropdown-content {
   margin-top: -4px;
-  margin-left: 3px;
+  margin-left: 10px;
   display: inline-block;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #44b3d4;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -105,7 +124,7 @@ input[type="text"] {
 .dropdown-extend {
   transition: 1s;
   position: relative;
-     margin-left: -13px;
+  margin-left: -13px;
 }
 
 .dropdown-content a {
@@ -118,5 +137,3 @@ input[type="text"] {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-
-/*seccion con ventas, nosotros y contactos*/

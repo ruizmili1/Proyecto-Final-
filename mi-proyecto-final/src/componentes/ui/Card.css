@@ -1,26 +1,26 @@
 .card{
-    background: #c6dbf2;
-    width: 240px;
-    height: 300px;
+    background: #0b30ff87;
+    width: 245px;
+    height: 330px;
     display: grid;
     align-items: center;
     justify-items: center;
     margin: 15px;
-    border-radius: 15px;
+    border-radius: 8px;
     
 }
 .containerCard{
    margin-top: 50px;
    display: grid;
-   grid-gap: 50px;
+   grid-gap: 55px;
    grid-auto-flow: row;
    justify-items: center;
    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-   margin-left: 70px;
-   margin-right: 70px;
+   margin-left: 80px;
+    margin-right: 60px;
    align-items: center;
 }
 .descripcion{
     text-align: center;
-    margin: 2px;
+    margin: 5px;
 }

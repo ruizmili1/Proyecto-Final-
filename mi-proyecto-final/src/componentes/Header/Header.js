@@ -1,16 +1,9 @@
 import React, { useState } from "react";
 import "./Header.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Switch,
-  Link,
-} from "react-router-dom";
-
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../Navegador/Navbar";
+import fotoportada from "../assets/fotoportada.png"
 
 const SearchBar = () => {
   const navigation = useNavigate();
@@ -231,7 +224,10 @@ export const Header = () => {
     <>
       <header className="header">
         <div>
-          <h1> MISIOTRÓNICA </h1>
+          <h1 className="h1 neon-title"> MISIOTRÓNICA </h1>
+        </div>
+        <div className="logoempresa">
+          <img className="fotoportada" src={fotoportada} />
         </div>
 
         <div className="general-menu">
