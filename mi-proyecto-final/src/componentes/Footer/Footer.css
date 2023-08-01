@@ -1,9 +1,14 @@
 .footer-container {
   padding: 20px;
-  text-align: center;
   height: 150px;
   background-color: #111725;
   height: "100vh";
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .parrafo{

@@ -8,12 +8,15 @@ import fotoportada from "../assets/fotoportada.png"
 const SearchBar = () => {
   const navigation = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
+
+
+
   const Redireccionador = (value) => {
     const luces = ["luce", "led", "luz", "foco", "lampara", "cinta"];
     const cables = ["cable", "corriente", "conductor"];
     const baterias = ["pila", "generador", "fuente", "bateria"];
     const placas = ["circuito impreso", "pbc", "placa"];
-    const resistencias = ["resistor", ];
+    const resistencias = ["resistor",];
     const fusibles = [
       "mecha",
       "espoleta",
@@ -95,6 +98,7 @@ const SearchBar = () => {
     Redireccionador(searchTerm);
   };
 
+ 
   return (
     <div className="search-container">
       <input
@@ -103,6 +107,7 @@ const SearchBar = () => {
         value={searchTerm}
         onChange={handleInputChange}
         placeholder="Buscar..."
+        
       />
       <button
         className="search-button"
@@ -251,6 +256,7 @@ export const Header = () => {
     </>
   );
 };
+
 
 
 
