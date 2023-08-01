@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Card.css";
 import ImagenesLuces from "./ReturnImagenesFile/ImagenesLuces";
 import ImagenesCables from "./ReturnImagenesFile/ImagenesCables";
@@ -8,7 +8,9 @@ import ImagenesFusibles from "./ReturnImagenesFile/ImagenesFusibles";
 import ImagenesPlacas from "./ReturnImagenesFile/ImagenesPlacas";
 import ImagenesBobinas from "./ReturnImagenesFile/ImagenesBobinas";
 import ImagenesCapacitores from "./ReturnImagenesFile/ImagenesCapacitores";
-import {BsCartPlus} from "react-icons/bs"
+import ImagenesNovedades from "./ReturnImagenesFile/ImagenesNovedades";
+import { BsCartPlus } from "react-icons/bs";
+
 
 const Card = (props) => {
   const { data, rute } = props;
@@ -38,22 +40,29 @@ const Card = (props) => {
       case "Capacitores":
         return <ImagenesCapacitores imagen={props.imagen} />;
         break;
+      case "Novedades":
+        return <ImagenesNovedades imagen={props.imagen} />;
+        break;
     }
   };
   const CardBody = (props) => {
     const { item } = props;
+    
 
+    
+  
     return (
       <>
         <div className="card">
-          <div>
+          <div className="image">
             <ReturnImagen imagen={item.imagen} />
           </div>
           <div className="titulo">{item.titulo}</div>
           <div className="descripcion">{item.descripcion}</div>
           <div className="precio">{item.precio}</div>
-          <div style={{margin: "10px"}}>
-            <BsCartPlus /> <button className="carrito-boton" > Agregar al carrito </button>
+          <div style={{ margin: "10px" }}>
+            <BsCartPlus />{" "}
+            <button className="carrito-boton"> Agregar al carrito </button>
           </div>
         </div>
       </>

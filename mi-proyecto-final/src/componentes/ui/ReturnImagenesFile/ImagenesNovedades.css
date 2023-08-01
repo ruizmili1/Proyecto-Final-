@@ -1,0 +1,29 @@
+.ofertaduracell4{
+    height: 180px;
+    width: 195px;
+}
+.ofertaduracell4:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+.tiraledcompleta{
+    height: 180px;
+    width: 195px; 
+}
+.tiraledcompleta:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+.fusibleoferta{
+    height: 180px;
+    width: 195px; 
+}
+.fusibleoferta:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}
+.cableoferta{
+    height: 175px;
+    width: 195px;
+ 
+}
+.cableoferta:hover{
+    box-shadow: 0 2px 5px #4169E1;
+}

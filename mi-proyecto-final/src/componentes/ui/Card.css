@@ -1,13 +1,17 @@
 .card{
-    background: #0b30ff87;
-    width: 245px;
-    height: 330px;
+    background: #44b3d4;
+    width: 250px;
+    height: 340px;
     display: grid;
     align-items: center;
     justify-items: center;
     margin: 15px;
     border-radius: 8px;
     
+}
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgb(11 91 215);
+    transition: all 0.2s linear;
 }
 .containerCard{
    margin-top: 50px;
@@ -23,4 +27,7 @@
 .descripcion{
     text-align: center;
     margin: 5px;
+}
+.image{
+    margin-top: 5px;
 }

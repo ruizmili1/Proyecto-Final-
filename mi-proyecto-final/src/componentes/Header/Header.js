@@ -11,9 +11,9 @@ const SearchBar = () => {
   const Redireccionador = (value) => {
     const luces = ["luce", "led", "luz", "foco", "lampara", "cinta"];
     const cables = ["cable", "corriente", "conductor"];
-    const baterias = ["pila", "generador", "fuente", "bateria", "bateria","batería"];
+    const baterias = ["pila", "generador", "fuente", "bateria"];
     const placas = ["circuito impreso", "pbc", "placa"];
-    const resistencias = [];
+    const resistencias = ["resistor", ];
     const fusibles = [
       "mecha",
       "espoleta",
@@ -151,6 +151,14 @@ const DropdownMenu = () => {
           </a>
           <a
             onClick={() => {
+              navigation("/Novedades");
+              closedMenu();
+            }}
+          >
+            Novedades
+          </a>
+          <a
+            onClick={() => {
               navigation("/Luces");
               closedMenu();
             }}
@@ -223,7 +231,7 @@ export const Header = () => {
   return (
     <>
       <header className="header">
-        <div>
+        <div className="container-titulo">
           <h1 className="h1 neon-title"> MISIOTRÓNICA </h1>
         </div>
         <div className="logoempresa">
@@ -233,7 +241,7 @@ export const Header = () => {
         <div className="general-menu">
           <DropdownMenu />
         </div>
-        <nav className="buscador">
+        <nav className="SearchBar ">
           <SearchBar />
         </nav>
         <div className="Navegador">
@@ -243,3 +251,7 @@ export const Header = () => {
     </>
   );
 };
+
+
+
+

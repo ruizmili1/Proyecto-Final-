@@ -7,19 +7,15 @@
     padding: 0px;
     justify-content: flex-end;
     margin-top: 0px;
-    height: '100vh';
+    height: '100%';
+    min-width: 100%;
 }
+
 
 .nav-links {
     list-style: none;
     display: flex;
-    margin-left: -35px;
-    
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-links li {

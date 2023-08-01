@@ -1,3 +1,4 @@
+
 .banner {
   background-image: url(../../assets/fondo-3.jpg);
   background-size: cover;
@@ -8,7 +9,12 @@
   justify-content: center;
   color: #ffffff;
   text-align: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
+
+
+
 
 .banner-content {
   max-width: 600px;
