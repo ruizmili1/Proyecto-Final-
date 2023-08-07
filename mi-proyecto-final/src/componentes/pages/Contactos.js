@@ -9,8 +9,8 @@ import { IoLogoWhatsapp } from "react-icons/io";
 const Contactos = () => {
   return (
     <div className="container-1">
-      <div class="contactos">
-        <ul class="lista-contactos">
+      <div >
+        <ul>
           <div className="contenedor-padre1">
             <div className="gmail">
               <GrMail />

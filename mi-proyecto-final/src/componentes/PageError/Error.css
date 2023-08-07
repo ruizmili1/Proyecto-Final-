@@ -1,7 +1,8 @@
-
-.texto{
-    display: grid;
-   justify-content: center;
-    margin-top: 20px;
-    
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 25px;
 }

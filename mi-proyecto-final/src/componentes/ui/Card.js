@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import "./Card.css";
 import ImagenesLuces from "./ReturnImagenesFile/ImagenesLuces";
 import ImagenesCables from "./ReturnImagenesFile/ImagenesCables";

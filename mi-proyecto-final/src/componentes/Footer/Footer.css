@@ -2,7 +2,6 @@
   padding: 20px;
   height: 150px;
   background-color: #111725;
-  height: "100vh";
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -16,15 +15,19 @@
   color:wheat
 }
 
-.contenedor-ubicacion{
+.contenedor-1{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  align-content: center;
+  margin-right: 20px;
 }
-
+.contenedor-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
 .ubicacion{
   margin-right: 5px;
   margin-top: 7px;
