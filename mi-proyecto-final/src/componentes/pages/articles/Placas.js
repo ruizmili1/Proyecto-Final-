@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../../ui/Card";
 
 const Placas = () => {
-    const [data, setData] = useState([
+     let data =[
       {
         id: 1,
         titulo: " Placas",
@@ -66,7 +66,7 @@ const Placas = () => {
         precio: "$3.300,00 ARS",
         imagen: "../../assets/Placas/placa-solacapa.jpg",
       },
-    ]);
+    ];
   
     return (
       <>

@@ -18,39 +18,40 @@ const Card = (props) => {
     switch (rute) {
       case "Luces":
         return <ImagenesLuces imagen={props.imagen} />;
-        break;
+        
       case "Cables":
         return <ImagenesCables imagen={props.imagen} />;
-        break;
+     
       case "Baterías":
         return <ImagenesBaterías imagen={props.imagen} />;
-        break;
+       
       case "Resistencias":
         return <ImagenesResistencias imagen={props.imagen} />;
-        break;
+       
       case "Fusibles":
         return <ImagenesFusibles imagen={props.imagen} />;
-        break;
+       
       case "Placas":
         return <ImagenesPlacas imagen={props.imagen} />;
-        break;
+        
       case "Bobinas":
         return <ImagenesBobinas imagen={props.imagen} />;
-        break;
+       
       case "Capacitores":
         return <ImagenesCapacitores imagen={props.imagen} />;
-        break;
+        
       case "Novedades":
         return <ImagenesNovedades imagen={props.imagen} />;
+        
+      default:
+        
         break;
     }
   };
-  const CardBody = (props) => {
-    const { item } = props;
-    
 
-    
-  
+  const CardBody = ( props) => {
+    const { item } = props;
+
     return (
       <>
         <div className="card">
@@ -91,4 +92,5 @@ const Card = (props) => {
     </>
   );
 };
+
 export default Card;

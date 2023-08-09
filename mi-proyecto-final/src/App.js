@@ -22,14 +22,14 @@ import { Component } from "react";
 
 
 
-
 class App extends Component {
   render(){
     return (
 
       <>
+      
         <Header />
-    
+        
         <Routes>
           <Route path="/" element={< Inicio />} />
           <Route path="Novedades" element={<Novedades />} />
@@ -50,6 +50,7 @@ class App extends Component {
         </Routes>
     
         <Footer />
+       
       </>
     
     );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React,{useState} from "react";
 import "./Header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
@@ -41,7 +41,7 @@ const SearchBar = () => {
       searchValue.length - 1,
       searchValue.length + 1
     );
-    if (hasSValue == "s") {
+    if (hasSValue === "s") {
       console.log("hh");
       searchValue = searchValue.slice(0, searchValue.length - 1);
     }
@@ -126,9 +126,6 @@ const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigation = useNavigate();
 
-  const redirect = () => {
-    navigation("/Luces");
-  };
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };

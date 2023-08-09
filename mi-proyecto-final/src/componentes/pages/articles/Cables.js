@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../../ui/Card";
 
 
 
 const Cables = () => {
-  const [data, setData] = useState([
+   let data =[
     {
       id: 20,
       titulo: " Cables ",
@@ -61,7 +61,7 @@ const Cables = () => {
       precio: "$1.799,00 ARS",
       imagen: "../../assets/Cables/cable-macho7hembra.jpg",
     },
-  ]);
+  ];
 
   return (
     <>

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../../ui/Card";
 
 const Fusibles = () => {
-  const [data, setData] = useState([
+   let data =[
     {
       id: 1,
       titulo: "Fusible vidrio",
@@ -45,7 +45,7 @@ const Fusibles = () => {
       precio: "$1.683,00 ARS X10U",
       imagen: "../../assets/Fusibles/fusible-6.32.15a.jpg",
     },
-  ]);
+  ];
 
   return (
     <>

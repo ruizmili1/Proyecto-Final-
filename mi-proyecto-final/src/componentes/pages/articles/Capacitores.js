@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../../ui/Card";
 
 const Capacitores = () => {
-  const [data, setData] = useState([
+   let data =[
     {
       id: 1,
       titulo: " Capacitor",
@@ -87,7 +87,7 @@ const Capacitores = () => {
       precio: "$330 ARS",
       imagen: "../../assets/Capacitores/tantalo-gota.4.7.35v.jpg",
     },
-  ]);
+  ];
 
   return (
     <>

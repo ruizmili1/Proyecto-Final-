@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../../ui/Card";
 
 const Resistencias = () => {
-    const [data, setData] = useState([
+     let data =[
       {
         id: 1,
         titulo: " Resistencias",
@@ -73,7 +73,7 @@ const Resistencias = () => {
         precio: "$2.283",
         imagen: "../../assets/Resistencias/especiales/fotoresistor-LDR.jpg",
       },
-    ]);
+    ];
   
     return (
       <>

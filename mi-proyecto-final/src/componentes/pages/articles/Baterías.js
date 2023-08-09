@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../../ui/Card";
 
 const Baterías = () => {
-  const [data, setData] = useState([
+   let data =[
     {
       id: 1,
       titulo: " Baterías",
@@ -87,7 +87,7 @@ const Baterías = () => {
       precio: "$190,00 ARS",
       imagen: "../../assets/Pilas/panasonic-evolta-3a.jpg",
     },
-  ]);
+  ];
 
   return (
     <>

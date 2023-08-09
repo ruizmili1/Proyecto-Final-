@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../../ui/Card";
 
 const Bobinas = () => {
-    const [data, setData] = useState([
+     let data =[
       {
         id: 1,
         titulo: " Bobinas",
@@ -54,7 +54,7 @@ const Bobinas = () => {
       },
      
       
-    ]);
+    ];
   
     return (
       <>

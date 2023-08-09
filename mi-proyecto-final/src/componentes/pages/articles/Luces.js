@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../../ui/Card";
 import { Header } from "../../Header/Header";
 
 
 const Luces = () => {
 
-    const [data, setData] = useState([
+     let data =[
         {
             id:1,
             titulo: " Luces ",
@@ -77,7 +77,7 @@ const Luces = () => {
             imagen: "../../assets/DiodosLed/led-blanco-exterior.jpeg"
 
         },
-    ])
+    ]
 
 
     return (

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Novedades.css";
 import Card from "../ui/Card";
 
 
 
 const Novedades = () => {
-  const [data, setData] = useState([
+  let data = [
     {
       id: 1,
       titulo: " Oferta",
@@ -40,7 +40,7 @@ const Novedades = () => {
     },
    
    
-  ]);
+  ];
 
   
 
